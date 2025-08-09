@@ -1,33 +1,159 @@
-# Small Particle Detection and Counting Project
+```markdown
+# 🖼️ Small Object Detection in Images
 
-## Overview
+## 📌 Project Overview
+This repository hosts an ongoing research initiative focused on **detecting and quantifying small objects in images** through **machine learning** and **advanced image processing** techniques.  
+The work aims to develop, evaluate, and refine algorithms capable of robust detection under real-world conditions, with particular emphasis on cases where object size, contrast, and occlusion present significant challenges.
 
-Welcome to the repository for the *Small Particle Detection and Counting* project, led by Professor Marvin Coto Jiménez. This project focuses on developing an automated system to detect and count small particles in images using machine learning techniques.
+The repository is designed as a **collaborative research space**. Contributors—researchers, engineers, and collaborators—are encouraged to propose, implement, and evaluate new approaches that enhance detection accuracy, speed, and robustness.
 
-In this repository, you will find the project description, objectives, and guidelines to help you get started. The repository is intended to be forked by students, who will then add their own code to implement solutions for the tasks outlined.
+---
 
-## Project Description
+## 🎯 Research Goals
+- Advance the state of the art in **small object detection**.
+- Evaluate and compare multiple **deep learning architectures** for this problem.
+- Establish a reproducible benchmarking framework for performance evaluation.
+- Build a repository of detection experiments, datasets, and analysis tools.
 
-The goal of this project is to create a system capable of counting small particles in images. The project involves applying machine learning algorithms and image processing techniques to detect and quantify the particles.
+---
 
-Key tasks include:
+## 📂 Areas of Contribution
+1. **Survey of Related Work**  
+   Comprehensive review of current methods, including traditional computer vision techniques and deep learning models.
 
-1. **Literature Review** – Researching current methods for small object detection in images.
-2. **Dataset Analysis** – Reviewing and preparing the provided dataset for training.
-3. **Model Implementation** – Implementing and training a machine learning model (e.g., CNN, YOLO, Faster R-CNN).
-4. **Model Evaluation** – Evaluating the model’s performance using standard metrics such as precision, recall, and F1-score.
-5. **Thresholding and Detection** – Fine-tuning the detection thresholds based on particle size, quantity, and image contrast.
+2. **Dataset Curation & Analysis**  
+   Selection, annotation, and preprocessing of datasets for training and validation.
 
-## Instructions
+3. **Model Implementation**  
+   Development and training of detection models such as:
+   - CNN-based architectures
+   - YOLO variants
+   - Faster R-CNN
+   - Transformer-based detectors
 
-1. **Fork the Repository:** Fork this repository to your own GitHub account to start working on the project.
-2. **Implement the Solution:** Add your own code for image preprocessing, model training, and evaluation. You will need to:
-   - Preprocess the dataset for model training.
-   - Implement a machine learning model (CNN or advanced models like YOLO or Faster R-CNN).
-   - Evaluate the performance of your model and refine it.
-3. **Dataset:** The dataset required for this project is available on Kaggle. You can access it [here](https://www.kaggle.com/datasets/daenys2000/small-object-dataset/data).
-4. **Deliverables:** Your completed work should be uploaded to this repository, including:
-   - Dataset generated
-   - Model training code
-   - Evaluation metrics and results
-   - A final report documenting your approach and results
+4. **Performance Evaluation**  
+   Benchmarking using:
+   - Precision / Recall
+   - F1-score
+   - mAP (mean Average Precision)
+   - Inference speed
+
+5. **Thresholding & Optimization**  
+   Fine-tuning detection thresholds, NMS parameters, and post-processing for improved performance on small targets.
+
+---
+
+## 📊 Dataset
+The primary dataset is available on **Kaggle**:  
+[🔗 Kaggle Dataset Link](https://www.kaggle.com/) *(Replace with actual dataset link)*
+
+Additional datasets, synthetic data generation scripts, and annotation tools may be included in the `datasets/` directory.
+
+---
+
+## 🛠️ Suggested Repository Structure
+```
+
+├── datasets/                # Original and processed datasets
+├── src/                     # Source code
+│   ├── preprocessing/       # Data preprocessing scripts
+│   ├── models/              # Model definitions
+│   ├── training/            # Training workflows
+│   ├── evaluation/          # Evaluation scripts
+│   └── utils/               # Utility functions
+├── results/                 # Metrics, plots, and detection outputs
+├── reports/                 # Technical reports and experiment logs
+├── requirements.txt         # Project dependencies
+└── README.md                # Documentation
+
+````
+
+---
+
+## ⚙️ Requirements
+- **Python:** 3.9 or higher
+- **Core Libraries:**
+  - `numpy`
+  - `pandas`
+  - `matplotlib`
+  - `opencv-python`
+  - `torch` / `tensorflow`
+  - `scikit-learn`
+  - `ultralytics` (for YOLO)
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+````
+
+---
+
+## ▶️ Contribution Workflow
+
+### 1️⃣ Fork the Repository
+
+Create a fork in your GitHub account.
+
+### 2️⃣ Clone Your Fork
+
+```bash
+git clone https://github.com/your-username/small-object-detection.git
+cd small-object-detection
+```
+
+### 3️⃣ Create a Feature Branch
+
+```bash
+git checkout -b feature/your-feature-description
+```
+
+### 4️⃣ Implement and Test
+
+* Place preprocessing scripts under `src/preprocessing/`
+* Place model definitions under `src/models/`
+* Ensure reproducibility by documenting parameters and dependencies.
+
+### 5️⃣ Commit and Push
+
+```bash
+git add .
+git commit -m "Added [feature description]"
+git push origin feature/your-feature-description
+```
+
+### 6️⃣ Open a Pull Request
+
+* Go to your fork on GitHub.
+* Select **Compare & Pull Request**.
+* Clearly describe:
+
+  * Purpose of the contribution
+  * Relevant implementation details
+  * Results or benchmarks obtained
+
+---
+
+## 📄 Deliverables for Each Contribution
+
+* **Source code** with clear documentation.
+* **Metrics and evaluation results** in `results/`.
+* **Optional report** summarizing methodology and findings (`reports/`).
+
+---
+
+## 📌 Contribution Guidelines
+
+* Keep code modular and maintainable.
+* Avoid committing large datasets—provide download scripts or instructions instead.
+* Use clear and concise commit messages.
+* All Pull Requests will be reviewed for **technical quality, clarity, and reproducibility** before merging.
+
+---
+
+## 📜 License
+
+This repository is maintained by the **\[Your Laboratory Name]** and is intended for **research and development purposes**.
+
+```
+
+
