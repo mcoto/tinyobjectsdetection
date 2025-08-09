@@ -1,7 +1,6 @@
-```markdown
-# 🖼️ Small Object Detection in Images
+# Small Object Detection in Images
 
-## 📌 Project Overview
+## Project Overview
 This repository hosts an ongoing research initiative focused on **detecting and quantifying small objects in images** through **machine learning** and **advanced image processing** techniques.  
 The work aims to develop, evaluate, and refine algorithms capable of robust detection under real-world conditions, with particular emphasis on cases where object size, contrast, and occlusion present significant challenges.
 
@@ -9,7 +8,7 @@ The repository is designed as a **collaborative research space**. Contributors�
 
 ---
 
-## 🎯 Research Goals
+## Research Goals
 - Advance the state of the art in **small object detection**.
 - Evaluate and compare multiple **deep learning architectures** for this problem.
 - Establish a reproducible benchmarking framework for performance evaluation.
@@ -17,7 +16,7 @@ The repository is designed as a **collaborative research space**. Contributors�
 
 ---
 
-## 📂 Areas of Contribution
+## Areas of Contribution
 1. **Survey of Related Work**  
    Comprehensive review of current methods, including traditional computer vision techniques and deep learning models.
 
@@ -43,7 +42,7 @@ The repository is designed as a **collaborative research space**. Contributors�
 
 ---
 
-## 📊 Dataset
+## Dataset
 The primary dataset is available on **Kaggle**:  
 [🔗 Kaggle Dataset Link](https://www.kaggle.com/) *(Replace with actual dataset link)*
 
@@ -51,7 +50,7 @@ Additional datasets, synthetic data generation scripts, and annotation tools may
 
 ---
 
-## 🛠️ Suggested Repository Structure
+## Suggested Repository Structure
 ```
 
 ├── datasets/                # Original and processed datasets
@@ -70,7 +69,7 @@ Additional datasets, synthetic data generation scripts, and annotation tools may
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 - **Python:** 3.9 or higher
 - **Core Libraries:**
   - `numpy`
@@ -88,7 +87,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Contribution Workflow
+## Contribution Workflow
 
 ### 1️⃣ Fork the Repository
 
@@ -133,7 +132,7 @@ git push origin feature/your-feature-description
 
 ---
 
-## 📄 Deliverables for Each Contribution
+## Deliverables for Each Contribution
 
 * **Source code** with clear documentation.
 * **Metrics and evaluation results** in `results/`.
@@ -141,7 +140,7 @@ git push origin feature/your-feature-description
 
 ---
 
-## 📌 Contribution Guidelines
+## Contribution Guidelines
 
 * Keep code modular and maintainable.
 * Avoid committing large datasets—provide download scripts or instructions instead.
@@ -150,9 +149,9 @@ git push origin feature/your-feature-description
 
 ---
 
-## 📜 License
+##  License
 
-This repository is maintained by the **\[Your Laboratory Name]** and is intended for **research and development purposes**.
+This repository is maintained by the **LAPA-Lab** and is intended for **research and development purposes**.
 
 ```
 
