@@ -2,8 +2,7 @@
 set -euo pipefail
 
 REPO="tiny-object-detection"
-mkdir -p "$REPO"/{apps/{frontend,api},analytics/{notebooks,reports,dashboards},dataops/{scripts,schemas,exploration},datasets/{raw,processed,annotations},src/{core,models,training,evaluation,inference,visualization},experiments/exp_$(date +%Y%m%d)_template,results/{metrics,plots,predictions},infra/{docker,k8s,scripts},tests,docs,.github/ISSUE_TEMPLATE}
-cd "$REPO"
+mkdir -p ./{apps/{frontend,api},analytics/{notebooks,reports,dashboards},dataops/{scripts,schemas,exploration},datasets/{raw,processed,annotations},src/{core,models,training,evaluation,inference,visualization},experiments/exp_$(date +%Y%m%d)_template,results/{metrics,plots,predictions},infra/{docker,k8s,scripts},tests,docs,.github/ISSUE_TEMPLATE}
 
 ########################################
 # Archivos base

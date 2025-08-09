@@ -1,14 +1,34 @@
-
 # Python
-
-**pycache**/
-\*.pyc
+__pycache__/
+*.pyc
 .venv/
 venv/
 .env
+.ipynb_checkpoints/
 
+# Node / Frontend
+node_modules/
+dist/
+build/
 
-# Others
+# Data (keep repo light)
+datasets/**
+!datasets/README.md
+!datasets/**/.gitkeep
+!datasets/annotations/**
+datasets/**/*.zip
+datasets/**/*.tar
+datasets/**/*.tar.gz
 
-.DS\_Store
-.ipynb\_checkpoints/
+# Models / weights (track with LFS if needed)
+**/*.pt
+**/*.pth
+**/*.onnx
+
+# Results (allow metrics, block heavy artifacts)
+results/plots/
+results/predictions/
+
+# OS
+.DS_Store
+Thumbs.db
