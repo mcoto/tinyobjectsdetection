@@ -50,20 +50,55 @@ Additional datasets, synthetic data generation scripts, and annotation tools may
 
 ---
 
-## Suggested Repository Structure
+## Repository Structure
 ```
 
-├── datasets/                # Original and processed datasets
-├── src/                     # Source code
-│   ├── preprocessing/       # Data preprocessing scripts
-│   ├── models/              # Model definitions
-│   ├── training/            # Training workflows
-│   ├── evaluation/          # Evaluation scripts
-│   └── utils/               # Utility functions
-├── results/                 # Metrics, plots, and detection outputs
-├── reports/                 # Technical reports and experiment logs
-├── requirements.txt         # Project dependencies
-└── README.md                # Documentation
+tiny-object-detection/
+├── apps/
+│   ├── frontend/                 # UI (ej. React/Vite o Streamlit)
+│   └── api/                      # API (ej. FastAPI) para inferencia/servir modelos
+├── analytics/
+│   ├── notebooks/                # Exploración, EDA
+│   ├── reports/                  # Reportes técnicos
+│   └── dashboards/               # Dashboards (ej. Streamlit)
+├── dataops/
+│   ├── scripts/                  # Descarga/preparación de datos
+│   ├── schemas/                  # Esquemas/validaciones de datos
+│   └── exploration/              # Análisis de calidad de datos
+├── datasets/                     # NO subir datos pesados (ver .gitignore)
+│   ├── raw/
+│   ├── processed/
+│   └── annotations/              # Anotaciones ligeras sí pueden versionarse
+├── src/
+│   ├── core/                     # Utilidades compartidas (I/O, config, logs)
+│   ├── models/                   # Definición/weights (solo código, no pesos)
+│   ├── training/                 # Entrenamiento
+│   ├── evaluation/               # Métricas, mAP, PR curves
+│   ├── inference/                # Pipelines de inferencia
+│   └── visualization/            # Visualización de predicciones/resultados
+├── experiments/                  # Plantillas y resultados de experimentos
+│   └── exp_YYYYMMDD_name/
+├── results/
+│   ├── metrics/                  # CSV/JSON de métricas
+│   ├── plots/                    # Figuras
+│   └── predictions/              # Imágenes con boxes
+├── infra/
+│   ├── docker/                   # Dockerfiles
+│   ├── k8s/                      # Manifests K8s (si aplica)
+│   └── scripts/                  # Scripts de despliegue
+├── tests/                        # Pruebas unitarias
+├── docs/                         # Documentación (arquitectura, ADRs)
+├── .github/
+│   ├── pull_request_template.md  # Plantilla PR
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
+├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+├── requirements.txt
+├── README.md
+└── Makefile
 
 ````
 
