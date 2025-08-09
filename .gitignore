@@ -7,16 +7,6 @@
 venv/
 .env
 
-# Datasets and large files
-
-datasets/raw/
-datasets/processed/
-models/
-
-# Large results
-
-results/plots/
-results/predictions/
 
 # Others
 
